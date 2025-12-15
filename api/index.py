@@ -12,7 +12,7 @@ app = Flask(__name__)
 # ---------------------------------------------------------
 NODE_API_URL = "https://api-enhanced-self.vercel.app/"
 
-@app.route('/music', methods=['GET', 'POST'])
+@app.route('/', methods=['GET', 'POST'])
 def music_handler():
     # Vercel 有时会把参数放在 query string 里
     song_name = request.args.get('name')
@@ -74,3 +74,4 @@ def music_handler():
 
 # ⚠️ 注意：Vercel 环境下不需要 app.run()，也不能写 app.run()
 # Vercel 会自动寻找 app 这个变量并运行它
+
