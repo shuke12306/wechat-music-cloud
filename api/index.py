@@ -10,7 +10,7 @@ app = Flask(__name__)
 # 这里填你在第一步里获得的 Vercel 域名！
 # 注意：不要带最后的斜杠 '/'
 # ---------------------------------------------------------
-NODE_API_URL = "https://api-enhanced-self.vercel.app"
+NODE_API_URL = "http://1310621164-f4a6ohqzp0.ap-shanghai.tencentscf.com"
 
 @app.route('/', methods=['GET', 'POST'])
 def music_handler():
@@ -74,5 +74,6 @@ def music_handler():
 
 # ⚠️ 注意：Vercel 环境下不需要 app.run()，也不能写 app.run()
 # Vercel 会自动寻找 app 这个变量并运行它
+
 
 
